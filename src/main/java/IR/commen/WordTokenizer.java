@@ -53,7 +53,7 @@ public class WordTokenizer {
 
 		try {
 			char[] word=tokenizedWordList.get(0);
-			tokenizedWordList.remove(0);
+			if(tokenizedWordList.size()!=0) tokenizedWordList.remove(0);
 			return word;
 		}
 		catch (Exception e){
